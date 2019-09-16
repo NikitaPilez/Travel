@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'BlogController@index');
+
+Route::get('/category/{categoryName}','BlogController@getCategory');
