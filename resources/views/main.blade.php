@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{asset('css/base.css')}}">
     <link rel="stylesheet" href="{{asset('css/vendor.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/general-styles.css')}}">
     <script src="{{asset('js/modernizr.js')}}"></script>
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
