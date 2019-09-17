@@ -8,6 +8,7 @@ class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     * This method generate users.
      *
      * @return void
      */

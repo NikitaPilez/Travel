@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+    /**
+     * This method view homepage.
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $popularPosts = Post::where('isPopular','1')->get();
@@ -18,6 +22,10 @@ class BlogController extends Controller
         ]);
     }
 
+    /**
+     * This method view category page.
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function getCategory()
     {
     	return view('category');

@@ -8,6 +8,7 @@ class CreatePostsTable extends Migration
 {
     /**
      * Run the migrations.
+     * Create posts table.
      *
      * @return void
      */
@@ -29,6 +30,7 @@ class CreatePostsTable extends Migration
 
     /**
      * Reverse the migrations.
+     * Delete posts table.
      *
      * @return void
      */
