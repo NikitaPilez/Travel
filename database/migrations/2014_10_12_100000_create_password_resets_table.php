@@ -8,6 +8,7 @@ class CreatePasswordResetsTable extends Migration
 {
     /**
      * Run the migrations.
+     * Create password_resets table.
      *
      * @return void
      */
@@ -22,6 +23,7 @@ class CreatePasswordResetsTable extends Migration
 
     /**
      * Reverse the migrations.
+     * Delete password_resets table.
      *
      * @return void
      */

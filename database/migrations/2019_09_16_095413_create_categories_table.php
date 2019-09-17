@@ -8,6 +8,7 @@ class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
+     * Create category table.
      *
      * @return void
      */
@@ -24,6 +25,7 @@ class CreateCategoriesTable extends Migration
 
     /**
      * Reverse the migrations.
+     * Delete category table.
      *
      * @return void
      */

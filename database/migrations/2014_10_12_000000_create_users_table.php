@@ -8,6 +8,7 @@ class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
+     * Create users table.
      *
      * @return void
      */
@@ -25,6 +26,7 @@ class CreateUsersTable extends Migration
 
     /**
      * Reverse the migrations.
+     * Delete users table.
      *
      * @return void
      */

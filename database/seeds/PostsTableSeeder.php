@@ -8,6 +8,7 @@ class PostsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     * This method generate posts.
      *
      * @return void
      */
