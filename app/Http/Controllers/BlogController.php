@@ -9,7 +9,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $popularPosts = Post::where('status','1')->get();
+        $popularPosts = Post::where('isPopular','1')->get();
         $allPosts = Post::paginate(6);
 
         return view('index',[
