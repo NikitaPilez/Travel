@@ -30,7 +30,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $allPosts = Post::paginate(6);
+        $allPosts = Post::paginate(12);
 
         return view('index', [
             'allPosts' => $allPosts,
@@ -45,7 +45,7 @@ class BlogController extends Controller
     public function categoryAction($categoryName = null)
     {
         $category = Category::findByName($categoryName);
-        $allPosts = Post::where('category_id', $category->id)->paginate(6);
+        $allPosts = Post::where('category_id', $category->id)->paginate(12);
 
         return view('category.index', [
             'category' => $category,

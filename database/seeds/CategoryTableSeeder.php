@@ -20,7 +20,7 @@ class CategoryTableSeeder extends Seeder
         {
             DB::table('category')->insert([
                 'name' => $faker->word,
-                'description' => $faker->text,
+                'description' => $faker->sentence,
             ]);
         }
     }
