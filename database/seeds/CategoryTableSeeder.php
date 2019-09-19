@@ -21,6 +21,7 @@ class CategoryTableSeeder extends Seeder
             DB::table('category')->insert([
                 'name' => $faker->word,
                 'description' => $faker->text,
+                'created_at' => rand(1546319103,1568910506),
             ]);
         }
     }

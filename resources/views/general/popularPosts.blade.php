@@ -11,7 +11,7 @@
                         <h5><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h5>
                         <section class="popular__meta">
                             <span class="popular__author"><span>By</span> <a href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a></span>
-                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">Jun 14, 2018</time></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2018-06-14">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</time></span>
                         </section>
                     </article>
                 @endforeach

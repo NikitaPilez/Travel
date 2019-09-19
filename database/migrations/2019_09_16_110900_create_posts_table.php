@@ -24,7 +24,7 @@ class CreatePostsTable extends Migration
             $table->longText('body');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('category_id')->references('id')->on('category');
-            $table->timestamps();
+            $table->string('created_at');
         });
     }
 
