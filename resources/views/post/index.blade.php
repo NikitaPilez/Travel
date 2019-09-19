@@ -1,13 +1,7 @@
 @extends('main')
 @section('content')
-    <section class="s-content s-content--top-padding s-content--narrow">
+    <section class="s-content s-content--narrow">
         <article class="row entry format-standard">
-            <div class="col-full text-center">
-                <div class="entry__post-thumb">
-                    <img src="https://picsum.photos/id/{{$post->id}}/900/400"
-                         alt="">
-                </div>
-            </div>
             <div class="entry__header col-full">
                 <h3 class="entry__header-title ">
                    {{$post->header}}
@@ -19,6 +13,12 @@
                         <a href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-full text-center">
+                <div class="entry__post-thumb">
+                    <img src="https://picsum.photos/id/{{$post->id}}/900/400"
+                         alt="">
+                </div>
             </div>
             <div class="col-full">
                 {!! $post->body !!}
