@@ -22,34 +22,10 @@
             <div></div>
         </div>
     </div>
-    <header class="s-header header">
-        <div class="header__logo">
-            <a class="logo" href="{{asset('/')}}">
-                <img src="{{asset('images/logo.svg')}}" alt="Homepage">
-            </a>
-        </div>
-        <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
-        <nav class="header__nav-wrap">
-            <h2 class="header__nav-heading h6">Navigate to</h2>
-            <ul class="header__nav">
-                <li class="current"><a href="{{asset('/')}}" title="">Home</a></li>
-                <li class="has-children">
-                    <a href="#0" title="">Categories</a>
-                    <ul class="sub-menu">
-                        <li><a href="{{asset('category/test')}}">Lifestyle</a></li>
-                        <li><a href="{{asset('category/test')}}">Health</a></li>
-                        <li><a href="{{asset('category/test')}}">Family</a></li>
-                        <li><a href="{{asset('category/test')}}">Management</a></li>
-                        <li><a href="{{asset('category/test')}}">Travel</a></li>
-                        <li><a href="{{asset('category/test')}}">Work</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
-        </nav>
-    </header>
 
-    @yield('content');
+    @include('general.header')
+
+    @yield('content')
 
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('js/plugins.js')}}"></script>
