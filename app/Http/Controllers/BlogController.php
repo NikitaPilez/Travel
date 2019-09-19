@@ -47,9 +47,22 @@ class BlogController extends Controller
         $category = Category::findByName($categoryName);
         $allPosts = Post::where('category_id', $category->id)->paginate(6);
 
-        return view('category', [
+        return view('category.index', [
             'category' => $category,
             'allPosts' => $allPosts,
+        ]);
+    }
+
+    public function postAction($id = null)
+    {
+        $post = Post::find($id);
+        $previousPost = Post::find($id - 1);
+        $nextPost = Post::find($id + 1);
+
+        return view('post.index',[
+            'post' => $post,
+            'previousPost' => $previousPost,
+            'nextPost' => $nextPost,
         ]);
     }
 }
