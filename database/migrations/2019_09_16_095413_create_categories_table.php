@@ -19,7 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->longText('description');
             $table->unique('name');
-            $table->timestamps();
+            $table->string('created_at');
         });
     }
 

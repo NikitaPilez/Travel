@@ -24,7 +24,7 @@
                                 </div>
                                 <h1 class="item-entry__title"><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h1>
                                 <div class="item-entry__date">
-                                    <a href="{{asset('post/'.$post->id)}}">June 15, 2018</a>
+                                    <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
                                 </div>
                             </div>
                         </div>

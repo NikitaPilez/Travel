@@ -7,7 +7,7 @@
                    {{$post->header}}
                 </h3>
                 <ul class="entry__header-meta">
-                    <li class="date">June 15, 2018</li>
+                    <li class="date">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</li>
                     <li class="byline">
                         By
                         <a href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a>
@@ -23,16 +23,13 @@
             <div class="col-full">
                 {!! $post->body !!}
             </div>
-
             <div class="entry__taxonomies">
                 <div class="entry__cat">
                     <h5>Posted In: </h5>
                     <span class="entry__tax-list">
-                            <a href="#0">Lifestyle</a>
-                            <a href="#0">Management</a>
+                            <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
                         </span>
-                </div> <!-- end entry__cat -->
-
+                </div>
                 <div class="entry__tags">
                     <h5>Tags: </h5>
                     <span class="entry__tax-list entry__tax-list--pill">
@@ -41,11 +38,9 @@
                             <a href="#0">varius</a>
                             <a href="#0">turpis</a>
                         </span>
-                </div> <!-- end entry__tags -->
+                </div>
             </div>
         </article>
-
-
 
         <div class="s-content__entry-nav">
             <div class="row s-content__nav">
@@ -62,7 +57,7 @@
                     </a>
                 </div>
             </div>
-        </div> <!-- end s-content__pagenav -->
+        </div>
 
         <div class="comments-wrap">
 
@@ -229,43 +224,7 @@
                 </div> <!-- end col-full -->
             </div> <!-- end comments -->
 
-            <div class="row comment-respond">
-
-                <!-- START respond -->
-                <div id="respond" class="col-full">
-
-                    <h3 class="h2">Add Comment <span>Your email address will not be published</span></h3>
-
-                    <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
-                        <fieldset>
-
-                            <div class="form-field">
-                                <input name="cName" id="cName" class="full-width" placeholder="Your Name*" value="" type="text">
-                            </div>
-
-                            <div class="form-field">
-                                <input name="cEmail" id="cEmail" class="full-width" placeholder="Your Email*" value="" type="text">
-                            </div>
-
-                            <div class="form-field">
-                                <input name="cWebsite" id="cWebsite" class="full-width" placeholder="Website" value="" type="text">
-                            </div>
-
-                            <div class="message form-field">
-                                <textarea name="cMessage" id="cMessage" class="full-width" placeholder="Your Message*"></textarea>
-                            </div>
-
-                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large full-width" value="Add Comment" type="submit">
-
-                        </fieldset>
-                    </form> <!-- end form -->
-
-                </div>
-                <!-- END respond-->
-
-            </div> <!-- end comment-respond -->
-
         </div> <!-- end comments-wrap -->
-
+        @include('general.popularPosts')
     </section> <!-- end s-content -->
 @endsection

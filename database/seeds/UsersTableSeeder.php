@@ -22,6 +22,7 @@ class UsersTableSeeder extends Seeder
                 'name' => $faker->name,
                 'email' => $faker->email,
                 'password' => bcrypt('secret'),
+                'created_at' => rand(1546319103,1568910506),
             ]);
         }
     }
