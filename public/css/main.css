@@ -1589,10 +1589,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entries .item-entry__title {
   font-family: "Montserrat"; 
-  font-size: 2.8rem;
+  font-size: 1.3em;
   line-height: 1.286;
   margin-top: 0;
-  margin-bottom: 4.5rem;
 }
 
 .entries .item-entry__title a {
@@ -1634,10 +1633,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entries .item-entry__date a {
   color: rgba(0, 0, 0, 0.8);
-}
-
-.entries-wrap + .pagination-wrap {
-  margin-top: 3.6rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2809,8 +2804,7 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 .s-content {
   background-color: #f2f2f2;
-  padding-top: 6rem;
-  padding-bottom: 7.2rem;
+  padding-bottom: 1.2rem;
 }
 
 .s-content--no-padding-bottom {
@@ -2861,7 +2855,7 @@ body.search-is-visible {
   }
 
   .s-content--top-padding {
-    padding-top: 15rem;
+    padding-top: 10rem;
   }
 
   .s-content__main, .entry__main {
@@ -2908,7 +2902,7 @@ body.search-is-visible {
 
 @media only screen and (max-width:800px) {
   .s-content--top-padding {
-    padding-top: 13.8rem;
+    padding-top: 8.8rem;
   }
 
   .entry__main {
@@ -2948,7 +2942,7 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 .s-extra {
   background-color: #FFFFFF;
-  padding-top: 12rem;
+  padding-top: 4rem;
   padding-bottom: 10.2rem;
   font-family: "Montserrat"; 
   font-size: 1.5rem;
@@ -2972,7 +2966,7 @@ body.search-is-visible {
   line-height: 1.286;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
   padding-top: 1.8rem;
   position: relative;
 }
