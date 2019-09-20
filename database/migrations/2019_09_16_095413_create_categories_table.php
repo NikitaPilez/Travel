@@ -18,7 +18,6 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->longText('description');
-            $table->unique('name');
             $table->string('created_at');
         });
     }
