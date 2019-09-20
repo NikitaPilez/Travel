@@ -32,4 +32,14 @@ class Post extends Model
     {
         return $this->belongsToMany('App\Tag', 'tags_posts', 'post_id', 'tag_id');
     }
+
+    /**
+     * This method return comments of the post.
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
 }
