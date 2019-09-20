@@ -60,93 +60,33 @@
         <div class="comments-wrap">
             <div id="comments" class="row">
                 <div class="col-full">
-                    <h3 class="h2">5 Comments</h3>
+                    <h3 class="h2">{{count($post->comments)}} comments</h3>
                     <ol class="commentlist">
+                        @foreach($post->comments as $comment)
                         <li class="depth-1 comment">
                             <div class="comment__avatar">
-                                <img class="avatar" src="https://picsum.photos/id/{{$post->id}}/50/50" alt="" width="50" height="50">
+                                <a href="{{asset('user/'.$comment->user->id)}}">
+                                    <img class="avatar" src="https://picsum.photos/id/{{$comment->id}}/50/50" alt="" width="50" height="50">
+                                </a>
                             </div>
                             <div class="comment__content">
                                 <div class="comment__info">
-                                    <div class="comment__author">Itachi Uchiha</div>
+                                    <a href="{{asset('user/'.$comment->user->id)}}">
+                                        <div class="comment__author">{{$comment->user->name}}</div>
+                                    </a>
                                     <div class="comment__meta">
-                                        <div class="comment__time">Jun 15, 2018</div>
+                                        <div class="comment__time">{{\Carbon\Carbon::parse($comment->created_at)->format('d F Y')}}</div>
                                         <div class="comment__reply">
                                             <a class="comment-reply-link" href="#0">Reply</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="comment__text">
-                                    <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
-                                        facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
+                                    <p>{{$comment->body}}</p>
                                 </div>
                             </div>
-                        <li class="thread-alt depth-1 comment">
-                            <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                            </div>
-                            <div class="comment__content">
-                                <div class="comment__info">
-                                    <div class="comment__author">John Doe</div>
-                                    <div class="comment__meta">
-                                        <div class="comment__time">Jun 15, 2018</div>
-                                        <div class="comment__reply">
-                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comment__text">
-                                    <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
-                                        urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
-                                        tantas semper delicatissimi.</p>
-                                </div>
-                            </div>
-                            <ul class="children">
-                                <li class="depth-2 comment">
-                                    <div class="comment__avatar">
-                                        <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
-                                    </div>
-                                    <div class="comment__content">
-                                        <div class="comment__info">
-                                            <div class="comment__author">Kakashi Hatake</div>
-                                            <div class="comment__meta">
-                                                <div class="comment__time">Jun 15, 2018</div>
-                                                <div class="comment__reply">
-                                                    <a class="comment-reply-link" href="#0">Reply</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__text">
-                                            <p>Duis sed odio sit amet nibh vulputate
-                                                cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
-                                                cursus a sit amet mauris</p>
-                                        </div>
-                                    </div>
-                                    <ul class="children">
-                                        <li class="depth-3 comment">
-                                            <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                            </div>
-                                            <div class="comment__content">
-                                                <div class="comment__info">
-                                                    <div class="comment__author">John Doe</div>
-                                                    <div class="comment__meta">
-                                                        <div class="comment__time">Jun 15, 2018</div>
-                                                        <div class="comment__reply">
-                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment__text">
-                                                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                                        etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </li>
+                        @endforeach
                     </ol>
                 </div>
             </div>

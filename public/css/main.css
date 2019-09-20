@@ -3655,7 +3655,6 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
  * ------------------------------------------------------------------- */
 .s-content__entry-nav {
   margin-top: 5rem;
-  margin-bottom: 6rem;
   padding: 2.5rem 0 2.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -3880,8 +3879,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
  * ## comments 
  * ------------------------------------------------------------------- */
 .comments-wrap {
-  padding: 4.5rem 0 7.2rem;
-  margin-top: 10.2rem;
+  padding: 4.5rem 0 4.2rem;
 }
 
 .comments-wrap h3 {
@@ -3916,7 +3914,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 .commentlist {
-  margin: 6rem 0 5.4rem;
+
   padding: 0;
 }
 
