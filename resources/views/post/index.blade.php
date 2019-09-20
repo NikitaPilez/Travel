@@ -25,19 +25,17 @@
             </div>
             <div class="entry__taxonomies">
                 <div class="entry__cat">
-                    <h5>Posted In: </h5>
-                    <span class="entry__tax-list">
-                            <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
-                        </span>
+                    <h5>Posted In:
+                        <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
+                    </h5>
                 </div>
                 <div class="entry__tags">
                     <h5>Tags: </h5>
                     <span class="entry__tax-list entry__tax-list--pill">
-                            <a href="#0">orci</a>
-                            <a href="#0">lectus</a>
-                            <a href="#0">varius</a>
-                            <a href="#0">turpis</a>
-                        </span>
+                        @foreach($post->tags as $tag)
+                            <a href="{{asset('tag/'.$tag->name)}}">{{$tag->name}}</a>
+                        @endforeach
+                    </span>
                 </div>
             </div>
         </article>

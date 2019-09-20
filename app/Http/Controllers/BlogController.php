@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Post;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -53,16 +54,38 @@ class BlogController extends Controller
         ]);
     }
 
+    /**
+     * This method view post page.
+     * @param null $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function postAction($id = null)
     {
         $post = Post::find($id);
         $previousPost = Post::find($id - 1);
         $nextPost = Post::find($id + 1);
 
-        return view('post.index',[
+        return view('post.index', [
             'post' => $post,
             'previousPost' => $previousPost,
             'nextPost' => $nextPost,
         ]);
     }
+
+    /**
+     * This method view category page.
+     * @param null $categoryName
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function tagAction($tagName = null)
+    {
+        $tag = Tag::findByName($tagName);
+        $allPosts = $tag->posts;
+
+        return view('tag.index', [
+            'tag' => $tag,
+            'allPosts' => $allPosts,
+        ]);
+    }
 }
+
