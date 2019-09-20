@@ -4,34 +4,37 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTagsTable extends Migration
+class CreateTagsPostsTable extends Migration
 {
     /**
      * Run the migrations.
-     * Create tags table.
+     * Create tags_posts table.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('tags', function (Blueprint $table) {
+        Schema::create('tags_posts', function (Blueprint $table) {
             $table->increments('id');
+
             $table->integer('post_id')->unsigned();
-            $table->string('name');
-            $table->integer('status')->nullable();
+            $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
+
+            $table->integer('tag_id')->unsigned();
+            $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
+
             $table->string('created_at');
-            $table->foreign('post_id')->references('id')->on('posts');
         });
     }
 
     /**
      * Reverse the migrations.
-     * Delete tags table.
+     * Delete tags_posts table.
      *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('tags');
+        Schema::dropIfExists('tags_posts');
     }
 }
