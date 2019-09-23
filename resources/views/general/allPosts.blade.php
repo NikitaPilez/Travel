@@ -12,6 +12,10 @@
                     <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
                 </div>
                 <h1 class="item-entry__title"><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h1>
+                <a href="{{asset('user/'.$post->user->name)}}" class="entry__profile-pic">
+                    <img class="user-avatar" src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
+                    <h6 class="d-inline-block">{{$post->user->name}}</h6>
+                </a>
                 <div class="item-entry__date">
                     <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
                 </div>

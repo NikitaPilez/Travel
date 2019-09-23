@@ -6,7 +6,7 @@
                 @foreach($popularPosts as $post)
                     <article class="col-block popular__post">
                         <a href="{{asset('post/'.$post->id)}}" class="popular__thumb">
-                            <img src="https://picsum.photos/id/{{$post->id}}/300/300" alt="">
+                            <img class="border-radius-50" src="https://picsum.photos/id/{{$post->id}}/300/300" alt="">
                         </a>
                         <h5><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h5>
                         <section class="popular__meta">
