@@ -19,6 +19,16 @@
                     <img src="https://picsum.photos/id/{{$post->id}}/900/400"
                          alt="">
                 </div>
+                <p class="font-size-star color-gray">
+                    {{count($post->comments)}}
+                    <i class="fa fa-comment"></i>
+                    {{count($post->stars)}}
+                    @if($post->currentUserIsLike())
+                        <i class="cursor-pointer fas fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                    @else
+                        <i class="cursor-pointer far fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                    @endif
+                </p>
             </div>
             <div class="col-full">
                 {!! $post->body !!}

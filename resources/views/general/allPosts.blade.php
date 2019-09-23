@@ -3,7 +3,7 @@
         <div class="item-entry" data-aos="zoom-in">
             <div class="item-entry__thumb">
                 <a href="{{asset('post/'.$post->id)}}" class="item-entry__thumb-link">
-                    <img src="https://picsum.photos/id/{{$post->id}}/300/300"
+                    <img class="w-100 h-100" src="https://picsum.photos/id/{{$post->id}}/300/300"
                          alt="">
                 </a>
             </div>
@@ -15,11 +15,9 @@
                 <div class="item-entry__date padding-star-right-in-card">
                     <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
                     <strong class="float-right">
-                        @if($post->currentUserIsLike())
-                            <i class="cursor-pointer fas fa-star js-star-post" data-post-id="{{$post->id}}"></i>
-                        @else
-                            <i class="cursor-pointer far fa-star js-star-post" data-post-id="{{$post->id}}"></i>
-                        @endif
+                        <i class="fas fa-comment"></i>
+                        {{count($post->comments)}}
+                        <i class="fas fa-star"></i>
                         {{count($post->stars)}}
                     </strong>
                 </div>
