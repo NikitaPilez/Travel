@@ -12,8 +12,16 @@
                     <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
                 </div>
                 <h1 class="item-entry__title"><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h1>
-                <div class="item-entry__date">
+                <div class="item-entry__date padding-star-right-in-card">
                     <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
+                    <strong class="float-right">
+                        @if($post->currentUserIsLike())
+                            <i class="cursor-pointer fas fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                        @else
+                            <i class="cursor-pointer far fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                        @endif
+                        {{count($post->stars)}}
+                    </strong>
                 </div>
             </div>
         </div>
