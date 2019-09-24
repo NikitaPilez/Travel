@@ -17,3 +17,23 @@
 .border-radius-50 {
     border-radius: 50%;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.margin-left-username {
+    margin-left: 10px;
+}
