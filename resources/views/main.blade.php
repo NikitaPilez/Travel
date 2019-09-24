@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Travel</title>
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="{{asset('css/vendor.css')}}">
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="stylesheet" href="{{asset('css/general-styles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome/css/fontawesome-all.css')}}">
     <script src="{{asset('js/modernizr.js')}}"></script>
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
@@ -30,5 +32,6 @@
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('js/plugins.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/post.js')}}"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
         <div class="item-entry" data-aos="zoom-in">
             <div class="item-entry__thumb">
                 <a href="{{asset('post/'.$post->id)}}" class="item-entry__thumb-link">
-                    <img src="https://picsum.photos/id/{{$post->id}}/300/300"
+                    <img class="w-100 h-100" src="https://picsum.photos/id/{{$post->id}}/300/300"
                          alt="">
                 </a>
             </div>
@@ -16,8 +16,14 @@
                     <img class="user-avatar align-items-center" src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
                     <p class="align-items-center font-weight-bold margin-left-username">{{$post->user->name}}</p>
                 </a>
-                <div class="item-entry__date">
+                <div class="item-entry__date padding-star-right-in-card">
                     <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
+                    <strong class="float-right">
+                        <i class="fas fa-comment"></i>
+                        {{count($post->comments)}}
+                        <i class="fas fa-star"></i>
+                        {{count($post->stars)}}
+                    </strong>
                 </div>
             </div>
         </div>

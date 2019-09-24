@@ -36,4 +36,35 @@
 
 .margin-left-username {
     margin-left: 10px;
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.padding-star-right-in-card {
+    padding-right: 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.font-size-star {
+	font-size: 1.3em;
+}
+
+.color-gray {
+	color: gray;
 }
