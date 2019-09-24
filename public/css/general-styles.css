@@ -69,3 +69,15 @@
 .color-gray {
 	color: gray;
 }
+
+.post-header-in-card {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-top: 0;
+}
