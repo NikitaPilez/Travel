@@ -6,12 +6,10 @@
                 <h3 class="entry__header-title ">
                    {{$post->header}}
                 </h3>
-                <ul class="entry__header-meta">
+                <ul class="entry__header-meta d-flex justify-content-center align-items-center">
+                    <img class="user-avatar" href="{{asset('user/'.$post->user->id)}}" src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
+                    <a class="margin-left-username" href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a>
                     <li class="date">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</li>
-                    <li class="byline">
-                        By
-                        <a href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a>
-                    </li>
                 </ul>
             </div>
             <div class="col-full text-center">
