@@ -1,3 +1,42 @@
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.user-avatar-10 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.margin-left-username {
+    margin-left: 10px;
+
 .cursor-pointer {
     cursor: pointer;
 }
