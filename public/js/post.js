@@ -10,24 +10,24 @@
     $('.js-star-post').click(function (event) {
         var elem = $(this);
         var postId = elem.attr('data-post-id');
-        // var countStar = elem.attr('data-count-star');
+        var countStar = parseInt(elem.siblings('.js-count-star').text(), 10);
         var actionStar = 'put';
-        var starContent = elem.parent().html();
-        
+
         if($(this).hasClass('fas')) {
             actionStar = 'delete';
-            elem.removeClass('fas').addClass('far');
+            countStar--;
+            elem.addClass('far').removeClass('fas');
         } else {
-             elem.removeClass('far').addClass('fas');
+            countStar++;
+            elem.addClass('fas').removeClass('far');
         }
+
+        elem.siblings('.js-count-star').text(countStar);
 
         $.ajax({
             method: 'POST',
             url: 'put-star',
             data: {postId: postId, actionStar: actionStar},
-            success: function (data) {
-                //changed count star.                
-            },
         });
     });
 

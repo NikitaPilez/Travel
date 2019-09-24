@@ -17,16 +17,16 @@
                     <img src="https://picsum.photos/id/{{$post->id}}/900/400"
                          alt="">
                 </div>
-                <p class="font-size-star color-gray">
-                    {{count($post->comments)}}
+                <div class="font-size-star color-gray">
+                    <p class="d-inline-block"> {{count($post->comments)}} </p>
                     <i class="fa fa-comment"></i>
-                    {{count($post->stars)}}
+                    <p class="js-count-star d-inline-block">{{count($post->stars)}}</p>
                     @if($post->currentUserIsLike())
-                        <i class="cursor-pointer fas fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                    <i class="cursor-pointer fas fa-star js-star-post" data-post-id="{{$post->id}}"></i>
                     @else
-                        <i class="cursor-pointer far fa-star js-star-post" data-post-id="{{$post->id}}"></i>
+                    <i class="cursor-pointer far fa-star js-star-post" data-post-id="{{$post->id}}"></i>
                     @endif
-                </p>
+                </div>
             </div>
             <div class="col-full">
                 {!! $post->body !!}
