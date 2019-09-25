@@ -5,26 +5,9 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Post;
 use App\Tag;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\View;
 
 class BlogController extends Controller
 {
-
-    /**
-     * BlogController constructor.
-     * In construct method get all global variables.
-     */
-    public function __construct()
-    {
-
-        $allCategories = Category::all();
-        $popularPosts = Post::where('isPopular', '1')->get();
-
-        View::share('allCategories', $allCategories);
-        View::share('popularPosts', $popularPosts);
-    }
-
     /**
      * This method view homepage.
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

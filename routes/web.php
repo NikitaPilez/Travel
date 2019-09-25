@@ -8,6 +8,8 @@ Route::get('/tag/{tagName}', 'BlogController@tagAction');
 
 Route::get('/post/{postId}', 'BlogController@postAction');
 
+Route::get('/user/{userId}', 'UserController@indexAction');
+
 Route::post('post/put-star','AjaxController@putStar');
 
 Auth::routes();
