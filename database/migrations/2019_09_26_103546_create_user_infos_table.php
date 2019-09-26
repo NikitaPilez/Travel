@@ -19,6 +19,8 @@ class CreateUserInfosTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('phone');
+            $table->string('country');
+            $table->string('city');
             $table->string('photo');
             $table->string('background_photo');
             $table->longText('description');
