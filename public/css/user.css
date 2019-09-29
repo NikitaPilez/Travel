@@ -1,0 +1,33 @@
+.margin-top-150 {
+    margin-top: 150px;
+}
+
+.background-color-user-profile {
+    background-color: #f0f0f0;
+}
+
+.background-color-white {
+    background-color: #FFFFFF;
+}
+
+.user-profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.user-name-text {
+    font-weight: bold;
+}
+
+.user-profile-card {
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #CCCCCC;
+    margin-top: 30px;
+}

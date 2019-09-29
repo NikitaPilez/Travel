@@ -70,6 +70,14 @@
 	color: gray;
 }
 
+.color-white {
+    color: white;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
 .post-header-in-card {
     display: block;
     white-space: nowrap;
@@ -80,4 +88,8 @@
     line-height: 1.5em;
     font-size: 1.1em;
     margin-top: 0;
+}
+
+.float-right {
+    float: right;
 }
