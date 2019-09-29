@@ -1,45 +1,7 @@
-/* =================================================================== 
- *
- *  Wordsmith v1.0 Base Stylesheet
- *  07-05-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # imports 
- *  # normalize
- *  # basic/base setup styles
- *    ## Media
- *    ## Typography resets
- *    ## links
- *    ## inputs
- *  # grid
- *    ## medium size devices
- *    ## tablets  
- *    ## mobile devices
- *    ## small mobile devices
- *  # block grids
- *    ## medium size devices
- *    ## tablets
- *    ## mobile devices
- *  # MISC
- *
- * =================================================================== */
 
-
-/* ===================================================================
- * # imports 
- *
- * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Nunito+Sans:300,400,400i,600,600i,700,700i,800");
 @import url("font-awesome/css/fontawesome-all.css");
 
-
-/* ===================================================================
- * # normalize
- * normalize.css v5.0.0 | MIT License |
- * github.com/necolas/normalize.css
- *
- * ------------------------------------------------------------------- */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -363,7 +325,7 @@ textarea {
  * # grid
  *
  * ------------------------------------------------------------------- */
-.row {
+/*.row {
   width: 89%;
   max-width: 1200px;
   margin: 0 auto;
@@ -380,7 +342,7 @@ textarea {
   max-width: none;
   margin-left: -20px;
   margin-right: -20px;
-}
+}*/
 
 /* column blocks
  * -------------------------------------- */
