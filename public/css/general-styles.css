@@ -10,32 +10,55 @@
     border-radius: 50%;
 }
 
-.d-inline-block {
-    display: inline-block;
+.popular-post-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.item-category-card-post {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item-header-card-post {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.item-footer-card-post {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.card-post-shadow {
+    box-shadow: 0 0 25px #CCCCCC;
 }
 
 .border-radius-50 {
     border-radius: 50%;
 }
 
-.d-flex {
-    display: flex;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
 .font-weight-bold {
     font-weight: bold;
 }
 
+.bg-gray {
+  background-color: #cccccc !important;
+}
+
+.bg-body {
+  background-color: #f0f0f0f0 !important;
+}
 .margin-left-username {
     margin-left: 10px;
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
 
 .cursor-pointer {
@@ -50,18 +73,6 @@
     float: right;
 }
 
-.d-inline-block {
-    display: inline-block;
-}
-
-.w-100 {
-	width: 100%;
-}
-
-.h-100 {
-	height: 100%;
-}
-
 .font-size-star {
 	font-size: 1.3em;
 }
@@ -72,10 +83,6 @@
 
 .color-white {
     color: white;
-}
-
-.flex-direction-column {
-    flex-direction: column;
 }
 
 .post-header-in-card {
@@ -90,6 +97,6 @@
     margin-top: 0;
 }
 
-.float-right {
-    float: right;
+.position-absolute {
+    position: absolute;
 }

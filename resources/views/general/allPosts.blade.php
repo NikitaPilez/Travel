@@ -1,31 +1,37 @@
 @foreach($allPosts as $post)
-    <article class="col-block">
-        <div class="item-entry" data-aos="zoom-in">
-            <div class="item-entry__thumb">
-                <a href="{{asset('post/'.$post->id)}}" class="item-entry__thumb-link">
-                    <img class="w-100 h-100" src="https://picsum.photos/id/{{$post->id}}/300/300"
-                         alt="">
-                </a>
+<div class="col-md-4">
+    <div class="mt-5 pb-3 card-post-shadow bg-white">
+        <div>
+            <a href="{{asset('post/'.$post->id)}}" class="item-entry__thumb-link">
+                <img class="w-100 h-100" src="https://picsum.photos/id/{{$post->id}}/500/500"
+                    alt="">
+            </a>
+        </div>            
+        <div class="text-center">
+            <div class="m-3 item-category-card-post">
+                <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
             </div>
-            <div class="item-entry__text">
-                <div class="item-entry__cat">
-                    <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
-                </div>
-                <h1 class="post-header-in-card"><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h1>
-                <a href="{{asset('user/'.$post->user->id)}}" class="entry__profile-pic d-flex justify-content-center">
+            <div class="m-4 item-header-card-post">
+                <a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a>
+            </div> 
+            <div class="m-3">
+                <a href="{{asset('user/'.$post->user->id)}}" class="d-flex justify-content-center align-items-center">
                     <img class="user-avatar align-items-center" src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
-                    <p class="align-items-center font-weight-bold margin-left-username">{{$post->user->name}}</p>
+                    <h5 class="align-items-center font-weight-bold margin-left-username">{{$post->user->name}}</h5>
                 </a>
-                <div class="item-entry__date padding-star-right-in-card">
-                    <a href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
-                    <strong class="float-right">
-                        <i class="fas fa-comment"></i>
-                        {{count($post->comments)}}
-                        <i class="fas fa-star"></i>
-                        {{count($post->stars)}}
-                    </strong>
-                </div>
             </div>
+            <div class="m-4 item-footer-card-post">
+                    <a class="text-black-50" href="{{asset('post/'.$post->id)}}">{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</a>
+                <strong class="float-right">
+                    <small>
+                        <i class="fa fa-comment"></i>
+                        {{count($post->comments)}}
+                        <i class="fa fa-star"></i>
+                        {{count($post->stars)}}
+                    </small> 
+                </strong>
+            </div>        
         </div>
-    </article>
+    </div>         
+</div>
 @endforeach
