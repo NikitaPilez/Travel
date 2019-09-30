@@ -1,17 +1,13 @@
 @extends('main')
 @section('content')
-    <section class="s-content s-content--top-padding">
-        <div class="row narrow">
-            <div class="col-full s-content__header" data-aos="fade-up">
-                <h1 class="display-1 display-1--with-line-sep">Tag: {{$tag->name}}</h1>
-            </div>
+    <div class="container mt-100">
+        <div class="row d-flex justify-content-center">
+            <h3 class="display-3 pb-3 border-tag-name">Tag: {{$tag->name}}</h3>
         </div>
-        <div class="row entries-wrap add-top-padding wide">
-            <div class="entries">
-                @include('general.allPosts')
-            </div>
+        <div class="row w-100 h-100">
+            @include('general.allPosts')
         </div>
-    </section>
+    </div>
 
     @include('general.popularPosts')
 @endsection
