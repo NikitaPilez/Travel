@@ -1,26 +1,46 @@
-<header class="s-header header">
-    <div class="header__logo">
-        <a class="logo" href="{{asset('/')}}">
-            <img src="{{asset('images/logo.svg')}}" alt="Homepage">
-        </a>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <h1>Swiper.js Slide 1</h1>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <h1>Swiper.js Slide 2</h1>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <h1>Swiper.js Slide 3</h1>
+        </div>
     </div>
-    <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
-    <nav class="header__nav-wrap d-flex justify-content-center align-items-center">
-        <h2 class="header__nav-heading h6">Navigate to</h2>
-        <ul class="header__nav">
-            <li class="current"><a href="{{asset('/')}}" title="">Home</a></li>
-            <li class="has-children">
-                <a href="#0" title="">Categories</a>
-                <ul class="sub-menu">
-                    @foreach($allCategories as $category)
-                        <li><a href="{{asset('category/'.$category->name)}}">{{$category->name}}</a></li>
-                    @endforeach
-                </ul>
-            </li>
-        </ul>
-        @if(Auth::check())
-        <img class="user-avatar" src="https://picsum.photos/id/3/50/50" alt="">
-        @endif
-        <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
-    </nav>
-</header>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-scrollbar"></div>
+</div>
+
+@push('scripts')
+    <script src="{{asset('js/swiper.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                speed: 400,
+                initialSlide: 1,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3500,
+                },
+                keyboard: {
+                    enabled: true,
+                },
+            })
+        });
+    </script>
+@endpush

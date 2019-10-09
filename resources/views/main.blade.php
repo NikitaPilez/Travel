@@ -23,5 +23,6 @@
     <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
     <script src="{{asset('js/post.js')}}"></script>
+    @stack('scripts')
 </body>
 </html>

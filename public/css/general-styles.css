@@ -22,6 +22,12 @@
     border-radius: 50%;
 }
 
+.swiper-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 900px;
+}
+
 .item-category-card-post {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
