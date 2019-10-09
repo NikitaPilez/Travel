@@ -168,6 +168,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
+  text-decoration: none;
   color: #7b287d;
 }
 
@@ -9922,6 +9923,14 @@ a.text-light:hover, a.text-light:focus {
 
 a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important;
+}
+
+.text-black {
+    color: #000000 !important;
+}
+
+a.text-black:hover, a.text-dark:focus {
+    color: #000000 !important;
 }
 
 .text-body {
