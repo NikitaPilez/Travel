@@ -34,6 +34,13 @@
     text-transform: uppercase;
 }
 
+.navigate-link {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
 .item-footer-card-post {
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -66,6 +73,9 @@
     border-radius: 4px;
 }
 
+.bg-black {
+    background-color: #000000;
+}
 
 .bg-gray {
   background-color: #cccccc !important;
@@ -88,10 +98,6 @@
 
 .padding-star-right-in-card {
     padding-right: 20px;
-}
-
-.float-right {
-    float: right;
 }
 
 .font-size-star {

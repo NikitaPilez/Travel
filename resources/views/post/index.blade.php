@@ -19,9 +19,9 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <h3 class="d-inline-block m-1"> {{count($post->comments)}} </h3>
+            <h3 class="d-inline-block m-2"> {{count($post->comments)}} </h3>
             <i class="fa fa-comment font-size-15"></i>
-            <h3 class="js-count-star d-inline-block m-1">{{count($post->stars)}} </h3>
+            <h3 class="js-count-star d-inline-block m-2">{{count($post->stars)}} </h3>
             @if($post->currentUserIsLike())
                 <i class="cursor-pointer fa fa-star js-star-post font-size-15" data-post-id="{{$post->id}}"></i>
             @else
