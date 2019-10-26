@@ -3075,7 +3075,7 @@ input[type="button"].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0.5rem 0;
+  /*padding: 0.5rem 0;*/
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
@@ -3252,11 +3252,11 @@ input[type="button"].btn-block {
   border: 0;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
+/*.dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
   background-color: #f8f9fa;
-}
+}*/
 
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
