@@ -4,6 +4,11 @@
     border-radius: 50%;
 }
 
+.dropdown-item:hover {
+    color: white;
+    background-color: black;
+}
+
 .user-avatar-10 {
     width: 10px;
     height: 10px;
