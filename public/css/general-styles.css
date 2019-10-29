@@ -25,6 +25,7 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
 }
 
 .swiper-container {
@@ -45,6 +46,10 @@
     text-transform: uppercase;
 }
 
+.box-shadow-dropdown {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
+}
+
 .navigate-link {
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
@@ -59,7 +64,7 @@
 }
 
 .card-post-shadow {
-    box-shadow: 0 0 25px #CCCCCC;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
 }
 
 .border-radius-50 {
@@ -185,6 +190,7 @@
 }
 
 .pgn .current, .pgn .current:hover {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
     background-color: #000000;
     color: white !important;
 }
