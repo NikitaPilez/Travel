@@ -1,5 +1,5 @@
-.margin-top-150 {
-    margin-top: 150px;
+.mt-100 {
+    margin-top: 100px;
 }
 
 .background-color-user-profile {
@@ -16,6 +16,7 @@
     border-radius: 50%;
     margin-top: 20px;
     margin-right: 20px;
+    box-shadow: 0 0 25px #0f0f0f;
 }
 
 .flex-wrap {
@@ -34,9 +35,40 @@
 
 .container-user-profile {
     height: 400px;
-    background-image: url('https://picsum.photos/id/120/1200/400');
+    background-image: url('https://picsum.photos/id/124/1200/400');
     position: relative;
-    box-shadow: 0 0 25px #CCCCCC;
+    box-shadow: 0 0 10px #0f0f0f;
+}
+
+.container-user-info {
+    background-color: white;
+    box-shadow: 0 0 10px #0f0f0f;
+    margin-top: 30px;
+}
+
+.swiper-container-user-posts {
+    width: 100%;
+    height: 300px;
+}
+
+.btn-follow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    border: 2px solid #ffffff;
+    letter-spacing: 0.2em;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #0f0f0f;
+}
+
+.btn-follow:hover {
+    color: white;
+    background: transparent;
+    cursor: pointer;
 }
 
 .follow-button {

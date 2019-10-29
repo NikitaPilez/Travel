@@ -14,7 +14,7 @@ class UserController extends Controller
         $user = User::find($userId);
 
         return view('user.index', [
-            'allPosts' => $userPosts,
+            'userPosts' => $userPosts,
             'user' => $user,
         ]);
     }
