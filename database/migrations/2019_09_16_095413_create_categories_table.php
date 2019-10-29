@@ -19,6 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->longText('description');
             $table->string('created_at');
+            $table->string('updated_at')->nullable();
         });
     }
 

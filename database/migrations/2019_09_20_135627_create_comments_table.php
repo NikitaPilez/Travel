@@ -22,9 +22,10 @@ class CreateCommentsTable extends Migration
             $table->longText('body');
             $table->string('status');
             $table->string('created_at');
+            $table->string('updated_at')->nullable();
 
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('post_id')->references('id')->on('posts');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
+            $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');;
         });
     }
 

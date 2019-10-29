@@ -17,7 +17,7 @@ class CreateUserInfosTable extends Migration
         Schema::create('user_infos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
             $table->string('phone');
             $table->string('country');
             $table->string('city');
@@ -27,6 +27,8 @@ class CreateUserInfosTable extends Migration
             $table->string('facebook_url');
             $table->string('instagram_url');
             $table->string('twitter_url');
+            $table->string('created_at')->nullable();
+            $table->string('updated_at')->nullable();
         });
     }
 
