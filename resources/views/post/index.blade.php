@@ -8,14 +8,16 @@
                 <div class="d-flex align-items-center justify-content-center mt-2">
                     <h5 class="mr-2 text-black-50"> {{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}} </h5>
                     <div class="mb-1">
-                        By <img class="user-avatar ml-1" href="{{asset('user/'.$post->user->id)}}"
-                                src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
-                        <a class="margin-left-username text-uppercase font-weight-bold" href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a>
+                        By <a class="text-uppercase font-weight-bold animation-increase" href="{{asset('user/'.$post->user->id)}}">
+                                <img class="d-inline-block user-avatar ml-1 animation-increase" href="{{asset('user/'.$post->user->id)}}"
+                                     src="https://picsum.photos/id/{{$post->id}}/50/50" alt="">
+                                {{$post->user->name}}
+                           </a>
                     </div>
                 </div>
             </div>
             <div class="mt-4 mb-4">
-                <img src="https://picsum.photos/id/{{$post->id}}/900/400" alt="">
+                <img class="w-100 shadow-classic" src="https://picsum.photos/id/{{$post->id}}/900/400" alt="">
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
@@ -32,7 +34,7 @@
             <div class="mb-2">
                 <h3 class="d-inline-block">Tags:</h3>
                 @foreach($post->tags as $tag)
-                    <div class="d-inline-block mt-2 mb-2">
+                    <div class="d-inline-block mt-2 mb-2 animation-increase">
                         <a class="border-tags color-gray" href="{{asset('tag/'.$tag->name)}}">{{$tag->name}}</a>
                     </div>
                 @endforeach
@@ -46,9 +48,9 @@
             <h1 class="w-100 text-center">{{count($post->comments)}} Comments</h1>
             <div class="m-2 w-100 h-100">
                 @foreach($post->comments as $comment)
-                    <div class="m-5 d-flex ">
+                    <div class="m-5 d-flex">
                         <a href="{{asset('user/'.$comment->user->id)}}">
-                            <img class="comment-avatar" href="{{asset('user/'.$comment->user->id)}}"
+                            <img class="comment-avatar animation-increase" href="{{asset('user/'.$comment->user->id)}}"
                                  src="https://picsum.photos/id/{{$comment->id}}/50/50" alt="">
                         </a>
                         <div class="d-flex flex-column ml-3 w-100">

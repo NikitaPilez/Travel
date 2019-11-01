@@ -1,6 +1,6 @@
 @foreach($allPosts as $post)
 <div class="col-md-4">
-    <div class="mt-5 pb-3 card-post-shadow bg-white">
+    <div class="mt-5 pb-3 shadow-classic bg-white">
         <div>
             <a href="{{asset('post/'.$post->id)}}" class="item-entry__thumb-link">
                 <img class="w-100 h-100" src="https://picsum.photos/id/{{$post->id}}/500/500"

@@ -51,7 +51,7 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu shadow-classic">
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

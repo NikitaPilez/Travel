@@ -8,7 +8,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="d-flex align-items-center">
                             <a href="{{asset('post/'.$post->id)}}">
-                                <img class="popular-post-img" src="https://picsum.photos/id/{{$post->id}}/300/300" alt="">
+                                <img class="popular-post-img animation-increase" src="https://picsum.photos/id/{{$post->id}}/300/300" alt="">
                             </a>
                             <div class="ml-3">
                                 <h5 class="font-weigth-bold"><a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h5>
