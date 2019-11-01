@@ -44,6 +44,15 @@ class Post extends Model
     }
 
     /**
+     * This method return parent comments of the post.
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function parentsComments()
+    {
+        return $this->hasMany('App\Comment')->where('parent_id','0');
+    }
+
+    /**
      * This method return stars of the post.
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
