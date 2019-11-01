@@ -2,6 +2,11 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,.3);
+}
+
+.shadow-classic {
+    box-shadow: 0 0 15px 10px rgba(0,0,0,.3);
 }
 
 .dropdown-item:hover {
@@ -19,13 +24,14 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,.3);
 }
 
 .popular-post-img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 25px 10px rgba(0,0,0,.3);
 }
 
 .swiper-container {
@@ -46,10 +52,6 @@
     text-transform: uppercase;
 }
 
-.box-shadow-dropdown {
-    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
-}
-
 .navigate-link {
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
@@ -63,8 +65,12 @@
     text-transform: uppercase;
 }
 
-.card-post-shadow {
-    box-shadow: 0 0 15px 5px rgba(0,0,0,.3);
+.animation-increase {
+    transition: all 150ms ease-in-out;
+}
+
+.animation-increase:hover {
+    transform: scale(1.05);
 }
 
 .border-radius-50 {
@@ -79,6 +85,7 @@
     padding: 5px;
     border: 1px solid #CCCCCC;
     border-radius: 4px;
+    box-shadow: 0 0 15px #cccccc;
 }
 
 .border-tags:hover {
