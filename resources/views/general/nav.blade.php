@@ -18,7 +18,7 @@
                         <img class="user-avatar" src="https://picsum.photos/id/3/50/50" alt="">
                         {{Auth::user()->name}}
                     </a>
-                    <div class="dropdown-menu shadow-classic" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu box-shadow-classic" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{asset('profile')}}">Profile</a>
                       <a class="dropdown-item" href="#">Create company account</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

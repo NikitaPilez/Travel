@@ -1,4 +1,4 @@
-<div class="swiper-container">
+<div class="swiper-container swiper-container-header">
     <div class="swiper-wrapper">
         <div class="swiper-slide d-flex justify-content-center align-items-center">
             <h1>Swiper.js Slide 1</h1>

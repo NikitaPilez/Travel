@@ -25,6 +25,10 @@
     border-radius: 15px;
 }
 
+.box-shadow-classic {
+    box-shadow: 0 0 10px #0f0f0f;
+}
+
 .dropdown-item:hover {
     color: white;
     background-color: black;
@@ -59,7 +63,7 @@
     font-size: 1.5rem;
 }
 
-.swiper-container {
+.swiper-container-header {
     margin-top: 50px;
     width: 100%;
     height: 900px;
