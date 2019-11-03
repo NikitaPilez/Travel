@@ -19,6 +19,7 @@ class CreateTagsTable extends Migration
             $table->string('name');
             $table->string('status');
             $table->string('created_at');
+            $table->string('updated_at')->nullable();
         });
     }
 
