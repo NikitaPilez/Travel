@@ -22,13 +22,16 @@
     </div>
     <div class="container-user-info">
         <div class="p-2">
-            <h3 class="ml-2">Recents posts</h3>
+            <h3 class="m-3 text-center">Recents posts</h3>
             <div class="swiper-container swiper-container-user-posts">
                 <div class="swiper-wrapper">
                     @foreach($userPosts as $post)
-                    <div class="d-flex justify-content-center align-items-center">
-                        <h1>Hello {{$post->id}}</h1>
-                    </div> 
+                        <div class="swiper-slide">
+                            <a href="{{asset('post/'.$post->id)}}">
+                                <img class="w-100" src="https://picsum.photos/id/{{$post->id}}/400/400"
+                                     alt="">
+                            </a>
+                        </div>
                     @endforeach
                 </div>
                 <div class="swiper-pagination"></div>
