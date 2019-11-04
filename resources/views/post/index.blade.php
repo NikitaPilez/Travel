@@ -18,7 +18,9 @@
                     </div>
                 </div>
                 <div class="mt-4 mb-4">
-                    <img class="w-100 post-img-shadow" src="https://picsum.photos/id/{{$post->id}}/900/400" alt="">
+                    <a href="https://picsum.photos/id/{{$post->id}}/900/400" data-fancybox="post-image" data-caption="{{$post->header}}">
+                        <img class="w-100 post-img-shadow" src="https://picsum.photos/id/{{$post->id}}/900/400" alt="" />
+                    </a>
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center w-100">

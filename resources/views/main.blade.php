@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('css/general-styles.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap-grid.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fancybox.min.css')}}">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     @yield('assets')
 </head>
@@ -21,8 +22,10 @@
 
     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
+    <script src="{{asset('js/fancybox.min.js')}}"></script>
+    <script src="{{asset('js/fancybox-settings.js')}}"></script>
     <script src="{{asset('js/post.js')}}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{asset('js/app.js') }}"></script>
     @stack('scripts')
 </body>
 </html>
