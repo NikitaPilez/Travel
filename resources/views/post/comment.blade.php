@@ -11,7 +11,7 @@
                     <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($comment->created_at)->format('d F Y h:m')}}</h5>
                 </div>
                 <div>
-                    <a class="border-reply" href="#">Reply</a>
+                    <i class="cursor-pointer fa fa-reply"></i>
                 </div>
             </div>
             <h4>{{$comment->body}}</h4>
@@ -30,7 +30,7 @@
                         <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($childComments->created_at)->format('d F Y h:m')}}</h5>
                     </div>
                     <div>
-                        <a class="border-reply" href="#">Reply</a>
+                        <i class="cursor-pointer fa fa-reply"></i>
                     </div>
                 </div>
                 <h4>{{$childComments->body}}</h4>

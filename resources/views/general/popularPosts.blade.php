@@ -13,7 +13,7 @@
                             <div class="ml-3">
                                 <h5 class="font-weigth-bold"><a class="text-white" href="{{asset('post/'.$post->id)}}">{{$post->header}}</a></h5>
                                 <span class="text-white">By <a class="text-white" href="{{asset('user/'.$post->user->id)}}">{{$post->user->name}}</a></span>
-                                    <span class="text-black-50"><span>on </span>{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</span>
+                                    <span class="text-white"><span>on </span>{{ \Carbon\Carbon::parse($post->created_at)->format('d F Y')}}</span>
                             </div>
                         </div>
                     </div>
