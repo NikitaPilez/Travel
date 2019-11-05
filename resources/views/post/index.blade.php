@@ -48,12 +48,7 @@
         <div class="row p-5 mt-5 container-post-content">
             {!! $post->body !!}
         </div>
-        <div class="row mt-5 comment-container">
-            <h1 class="w-100 text-center mt-3">{{count($post->comments)}} Comments</h1>
-            <div class="m-2 w-100 h-100">
-               @include('post.comment')
-            </div>
-        </div>
+        @include('post.comment')
     </div>
 
     @include('general.popularPosts')
