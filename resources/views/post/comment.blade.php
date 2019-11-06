@@ -14,10 +14,18 @@
                         <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($comment->created_at)->format('d F Y h:m')}}</h5>
                     </div>
                     <div>
-                        <i class="cursor-pointer fa fa-reply"></i>
+                        <i class="cursor-pointer fa fa-reply text-black-50"></i>
                     </div>
                 </div>
-                <h4>{{$comment->body}}</h4>
+                <div class="d-flex justify-content-between">
+                    <h4>{{$comment->body}}</h4>
+                    <div>
+                        <h6 class="d-inline-block">243</h6>
+                        <i class="cursor-pointer fa fa-star-o"></i>
+                    </div>
+
+                </div>
+
             </div>
         </div>
         @foreach($comment->childComments() as $childComments)
@@ -33,10 +41,16 @@
                             <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($childComments->created_at)->format('d F Y h:m')}}</h5>
                         </div>
                         <div>
-                            <i class="cursor-pointer fa fa-reply"></i>
+                            <i class="cursor-pointer fa fa-reply text-black-50"></i>
                         </div>
                     </div>
-                    <h4>{{$childComments->body}}</h4>
+                    <div class="d-flex justify-content-between">
+                        <h4>{{$childComments->body}}</h4>
+                        <div>
+                            <h6 class="d-inline-block">243</h6>
+                            <i class="cursor-pointer fa fa-star-o"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         @endforeach

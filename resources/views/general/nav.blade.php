@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-black">
     <div class="container">
-        <a class="navbar-brand text-white" href="{{asset('/')}}">Travel</a>
+        <a class="navbar-brand text-white navigate-link" href="{{asset('/')}}">Travel</a>
         <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,7 +18,7 @@
                         <img class="user-avatar" src="https://picsum.photos/id/3/50/50" alt="">
                         {{Auth::user()->name}}
                     </a>
-                    <div class="dropdown-menu box-shadow-classic" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{asset('profile')}}">Profile</a>
                       <a class="dropdown-item" href="#">Create company account</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -9,10 +9,14 @@
         </div>            
         <div class="text-center">
             <div class="m-3 item-category-card-post">
-                <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
+                <h3>
+                    <a href="{{asset('category/'.$post->category->name)}}">{{$post->category->name}}</a>
+                </h3>
             </div>
             <div class="m-4 item-header-card-post">
-                <a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a>
+                <h6>
+                    <a href="{{asset('post/'.$post->id)}}">{{$post->header}}</a>
+                </h6>
             </div> 
             <div class="m-3">
                 <a href="{{asset('user/'.$post->user->id)}}" class="d-flex justify-content-center align-items-center">
