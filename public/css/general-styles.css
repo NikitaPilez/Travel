@@ -98,10 +98,15 @@
 }
 
 .navigate-link {
+    font-weight: 500;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: white;
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 25px 10px rgba(0,0,0,.3);
 }
 
 .item-footer-card-post {
