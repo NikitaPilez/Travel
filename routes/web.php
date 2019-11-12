@@ -10,6 +10,8 @@ Route::get('/post/{postId}', 'BlogController@postAction');
 
 Route::get('/user/{userId}', 'UserController@indexAction');
 
+Route::post('upload-user-photo','UploadPhotoController@store');
+
 Route::post('post/put-star','AjaxController@putStar');
 
 Auth::routes();
