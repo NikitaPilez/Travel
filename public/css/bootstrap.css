@@ -36,7 +36,7 @@
 }
 
 *,
-*::before, 
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -189,7 +189,7 @@ sup {
 
 a {
   text-decoration: none;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   color: #000000;
   font-weight: 500;
   -webkit-transition: all 0.3s ease-in-out;

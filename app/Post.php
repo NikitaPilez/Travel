@@ -49,7 +49,7 @@ class Post extends Model
      */
     public function parentsComments()
     {
-        return $this->hasMany('App\Comment')->where('parent_id','0');
+        return $this->hasMany('App\Comment')->where('parent_id', '0');
     }
 
     /**
@@ -70,12 +70,10 @@ class Post extends Model
     {
         $isLike = [];
 
-        if(Auth::check()){
-            $isLike = StarPost::where('user_id',Auth::user()->id)->where('post_id',$this->id)->get();
+        if (Auth::check()) {
+            $isLike = StarPost::where('user_id', Auth::user()->id)->where('post_id', $this->id)->get();
         }
 
         return count($isLike) > 0;
     }
-
 }
-

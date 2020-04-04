@@ -1,11 +1,11 @@
-/* =================================================================== 
+/* ===================================================================
  *
- *  Wordsmith v1.0 Vendor/Third Party CSS 
+ *  Wordsmith v1.0 Vendor/Third Party CSS
  *  07-05-2018
  *  ------------------------------------------------------------------
  *
  *  TOC:
- *  # animate on scroll 
+ *  # animate on scroll
  *  # slick slider
  *  # PrettyPrint GitHub Theme
  *
@@ -13,7 +13,7 @@
 
 
 /* ===================================================================
- * # animate on scroll 
+ * # animate on scroll
  * https://michalsnik.github.io/aos/
  * ------------------------------------------------------------------- */
 [data-aos][data-aos][data-aos-duration='50'],
@@ -1281,8 +1281,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 
 /* ===================================================================
- * # PrettyPrint GitHub Theme 
- * 
+ * # PrettyPrint GitHub Theme
+ *
  * ------------------------------------------------------------------- */
 .prettyprint {
   background: #E5E5E5;

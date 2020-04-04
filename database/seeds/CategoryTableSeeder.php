@@ -16,12 +16,11 @@ class CategoryTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 10; $i++)
-        {
+        for ($i = 0; $i < 10; $i++) {
             DB::table('category')->insert([
                 'name' => $faker->word,
                 'description' => $faker->sentence,
-                'created_at' => rand(1546319103,1568910506),
+                'created_at' => rand(1546319103, 1568910506),
             ]);
         }
     }

@@ -16,13 +16,12 @@ class UsersTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 50; $i++)
-        {
+        for ($i = 0; $i < 50; $i++) {
             DB::table('users')->insert([
                 'name' => $faker->name,
                 'email' => $faker->email,
                 'password' => bcrypt('secret'),
-                'created_at' => rand(1546319103,1568910506),
+                'created_at' => rand(1546319103, 1568910506),
             ]);
         }
     }

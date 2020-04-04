@@ -10,7 +10,7 @@ Route::get('/post/{postId}', 'BlogController@postAction');
 
 Route::get('/user/{userId}', 'UserController@indexAction');
 
-Route::post('post/put-star','AjaxController@putStar');
+Route::post('post/put-star', 'AjaxController@putStar');
 
 Auth::routes();
 

@@ -13,7 +13,7 @@
         var countStar = parseInt(elem.siblings('.js-count-star').text(), 10);
         var actionStar = 'put';
 
-        if($(this).hasClass('fa-star')) {
+        if ($(this).hasClass('fa-star')) {
             actionStar = 'delete';
             countStar--;
             elem.addClass('fa-star-o').removeClass('fa-star');

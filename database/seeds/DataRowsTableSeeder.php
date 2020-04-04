@@ -648,7 +648,6 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 4,
             ])->save();
         }
-
     }
 
     /**
