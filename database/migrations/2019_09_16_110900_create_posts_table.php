@@ -22,8 +22,10 @@ class CreatePostsTable extends Migration
             $table->string('isPopular')->nullable();
             $table->longText('header')->nullable();
             $table->longText('body');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
-            $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');;
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            ;
+            $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
+            ;
             $table->string('created_at');
             $table->string('updated_at')->nullable();
         });

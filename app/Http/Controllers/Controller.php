@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\View;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    use AuthorizesRequests;
+    use DispatchesJobs;
+    use ValidatesRequests;
 
     /**
      * BlogController constructor.
@@ -27,6 +29,4 @@ class Controller extends BaseController
         View::share('allCategories', $allCategories);
         View::share('popularPosts', $popularPosts);
     }
-
 }
-

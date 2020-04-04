@@ -17,15 +17,15 @@ class AjaxController extends Controller
     {
         $response = [];
 
-        if($_POST['actionStar'] == 'put'){
-            $starPost = new StarPost;
+        if ($_POST['actionStar'] == 'put') {
+            $starPost = new StarPost();
             $starPost->post_id = $_POST['postId'];
             $starPost->user_id = Auth::user()->id;
             $starPost->created_at = time();
             $starPost->save();
             $response['hasStar'] = true;
-        }else {
-            $starPost = StarPost::where('post_id',$_POST['postId'])->where('user_id', Auth::user()->id)->first();
+        } else {
+            $starPost = StarPost::where('post_id', $_POST['postId'])->where('user_id', Auth::user()->id)->first();
             $starPost->delete();
             $response['hasStar'] = false;
         }
@@ -33,4 +33,3 @@ class AjaxController extends Controller
         return $response;
     }
 }
-

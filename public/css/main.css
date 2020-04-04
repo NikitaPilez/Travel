@@ -27,17 +27,17 @@ body {
 }
 
 @font-face {
-font-family: "Montserrat"; 
-src: url("../fonts/Montserrat-Light.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
+font-family: "Montserrat";
+src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   color: #000000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -54,7 +54,7 @@ a:hover, a:active {
 
 /* ===================================================================
  * # typography & general theme styles
- * 
+ *
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Montserrat;
@@ -346,7 +346,7 @@ hr {
   height: 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## Lists
  * ------------------------------------------------------------------- */
 ol {
@@ -402,7 +402,7 @@ dd {
   margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## responsive video container
  * ------------------------------------------------------------------- */
 .video-container {
@@ -423,7 +423,7 @@ dd {
   height: 100%;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## floated image
  * ------------------------------------------------------------------- */
 img.pull-right {
@@ -434,7 +434,7 @@ img.pull-left {
   margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## tables
  * ------------------------------------------------------------------- */
 table {
@@ -473,8 +473,8 @@ th:last-child, td:last-child {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Spacing 
+/* -------------------------------------------------------------------
+ * ## Spacing
  * ------------------------------------------------------------------- */
 button, .btn {
   margin-bottom: 1.2rem;
@@ -502,7 +502,7 @@ form,
 
 
 /* ===================================================================
- * # preloader 
+ * # preloader
  *
  * ------------------------------------------------------------------- */
 #preloader {
@@ -697,7 +697,7 @@ form,
 
 
 /* ===================================================================
- * # forms 
+ * # forms
  *
  * ------------------------------------------------------------------- */
 fieldset {
@@ -828,7 +828,7 @@ label > input[type="radio"] {
   top: .15rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## Style Placeholder Text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
@@ -873,7 +873,7 @@ label > input[type="radio"] {
   color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## Change Autocomplete styles in Chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus
@@ -994,13 +994,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* =================================================================== 
+/* ===================================================================
  * # additional components
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## alert box 
+/* -------------------------------------------------------------------
+ * ## alert box
  * ------------------------------------------------------------------- */
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
@@ -1044,11 +1044,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   color: #bba31b;
 }
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles 
+/* -------------------------------------------------------------------
+ * ## additional typo styles
  * ------------------------------------------------------------------- */
 
-/* drop cap 
+/* drop cap
  * ----------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
@@ -1063,7 +1063,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   color: #000000;
 }
 
-/* line definition style 
+/* line definition style
  * ----------------------------------------------- */
 .lining dt, .lining dd {
   display: inline;
@@ -1088,7 +1088,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
+/* dictionary definition style
  * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
@@ -1109,7 +1109,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -1130,7 +1130,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   height: 1em;
   position: absolute;
   font-size: 10rem;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   color: rgba(0, 0, 0, 0.25);
 }
 
@@ -1154,7 +1154,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .pull-quote blockquote p {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 600;
   padding: 0;
   font-size: 2.1rem;
@@ -1166,7 +1166,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -1199,7 +1199,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
   display: inline-block;
   font-size: 2.5rem;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   border: none;
   color: #000000;
@@ -1212,7 +1212,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a em {
   display: block;
   margin: .6rem 0 0 0;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
@@ -1220,7 +1220,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /* -------------------------------------------------------------------
- * ## pagination 
+ * ## pagination
  * ------------------------------------------------------------------- */
 .pgn {
   margin: 3rem auto;
@@ -1242,7 +1242,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .pgn__num {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 3rem;
@@ -1318,7 +1318,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   background-color: transparent;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * pagination
  * ------------------------------------------------------------------- */
@@ -1343,7 +1343,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-1 {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 4.8rem;
   line-height: 1.25;
   letter-spacing: -.15rem;
@@ -1370,7 +1370,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   transform: translate3d(-50%, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * reusable and common theme styles
  * ------------------------------------------------------------------- */
@@ -1424,8 +1424,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 }
 
-/* ------------------------------------------------------------------- 
- * ## close button for search and mobile navigation 
+/* -------------------------------------------------------------------
+ * ## close button for search and mobile navigation
  * ------------------------------------------------------------------- */
 .header__overlay-close {
   position: absolute;
@@ -1463,7 +1463,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   transform: rotate(-45deg);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## entries list
  * ------------------------------------------------------------------- */
 .entries-wrap {
@@ -1536,7 +1536,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entries .item-entry__thumb-link::after {
   content: "...";
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 3rem;
   z-index: 1;
   display: block;
@@ -1584,7 +1584,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entries .item-entry__title {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 1.3em;
   line-height: 1.286;
   margin-top: 0;
@@ -1631,7 +1631,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * entries
  * ------------------------------------------------------------------- */
@@ -1789,7 +1789,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header__search-trigger::before {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
@@ -1802,7 +1802,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   padding-right: 33px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## header-search
  * ------------------------------------------------------------------- */
 .header__search {
@@ -1849,7 +1849,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   color: #000000;
   height: auto;
   width: 100%;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 6rem;
   line-height: 1.5;
@@ -1921,7 +1921,7 @@ body.search-is-visible {
   visibility: visible;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## header-toggle
  * ------------------------------------------------------------------- */
 .header__toggle-menu {
@@ -1984,7 +1984,7 @@ body.search-is-visible {
 }
 
 .header__nav-wrap .header__nav-heading {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.2;
@@ -2004,7 +2004,7 @@ body.search-is-visible {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
@@ -2107,7 +2107,7 @@ body.search-is-visible {
   display: block;
   white-space: nowrap;
   padding: 7.5px 3rem 7.5px 2rem;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   text-transform: none;
   letter-spacing: 0;
   line-height: 18px;
@@ -2127,7 +2127,7 @@ body.search-is-visible {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * header
  * ------------------------------------------------------------------- */
@@ -2224,14 +2224,14 @@ body.search-is-visible {
     overflow-y: auto;
   }
 
-  .header__nav-wrap .header__nav-heading, 
+  .header__nav-wrap .header__nav-heading,
   .header__nav-wrap .close-mobile-menu {
     display: block;
   }
 
   .header__nav {
     margin: 6rem 7rem 3rem 7rem;
-    font-family: "Montserrat"; 
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 18px;
     text-transform: none;
@@ -2350,7 +2350,7 @@ body.search-is-visible {
 
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## main navigation on large screens
  * ------------------------------------------------------------------- */
 @media only screen and (min-width:901px) {
@@ -2481,7 +2481,7 @@ body.search-is-visible {
 }
 
 .featured__slide h1 {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 4.2rem;
   line-height: 1.429;
   margin-top: 0;
@@ -2544,7 +2544,7 @@ body.search-is-visible {
 
 .featured__slide .entry__category {
   display: inline-block;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -2579,7 +2579,7 @@ body.search-is-visible {
   list-style: none;
   margin: 0 0 0 6rem;
   padding: 0;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -2614,7 +2614,7 @@ body.search-is-visible {
   padding: 60px 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * featured
  * ------------------------------------------------------------------- */
@@ -2940,7 +2940,7 @@ body.search-is-visible {
   background-color: #FFFFFF;
   padding-top: 4rem;
   padding-bottom: 10.2rem;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 1.5rem;
   line-height: 1.8;
 }
@@ -2990,7 +2990,7 @@ body.search-is-visible {
 }
 
 .s-extra h5 {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.3125;
@@ -3047,7 +3047,7 @@ body.search-is-visible {
   border-bottom: none;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * extra
  * ------------------------------------------------------------------- */
@@ -3115,7 +3115,7 @@ footer a {
 }
 
 footer h4 {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.286;
@@ -3232,7 +3232,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .s-footer__subscribe #mc-form label {
   color: #FFFFFF;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 1.3rem;
   padding: 0 2rem;
 }
@@ -3259,7 +3259,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## footer social
  * ------------------------------------------------------------------- */
 .footer-social {
@@ -3288,7 +3288,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   margin: 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## go to top
  * ------------------------------------------------------------------- */
 .go-top {
@@ -3337,9 +3337,9 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * footer 
+ * footer
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   footer [class*="s-footer__"] > .row [class*="col-"]:first-child {
@@ -3426,9 +3426,9 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
     line-height: 5.4rem;
   }
 
-  .go-top a:hover, 
-  .go-top a:focus, 
-  .go-top a:visited:hover, 
+  .go-top a:hover,
+  .go-top a:focus,
+  .go-top a:visited:hover,
   .go-top a:visited:focus {
     height: 6rem;
   }
@@ -3483,7 +3483,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .entry__header-meta {
   list-style: none;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.929;
@@ -3542,7 +3542,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .entry__tax-list a {
   display: inline-block;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-size: 1.6rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.5);
@@ -3670,7 +3670,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .s-content__nav span {
   display: block;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -3681,7 +3681,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 .s-content__nav a {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.5;
@@ -3707,7 +3707,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   padding: 0 20px 0 60px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * blog styles and blog components
  * ------------------------------------------------------------------- */
@@ -3872,14 +3872,14 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 /* -------------------------------------------------------------------
- * ## comments 
+ * ## comments
  * ------------------------------------------------------------------- */
 .comments-wrap {
   padding: 4.5rem 0 4.2rem;
 }
 
 .comments-wrap h3 {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.5;
@@ -3890,7 +3890,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .comments-wrap h3 span {
   display: block;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.667;
@@ -3948,7 +3948,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 }
 
 .comment__meta {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-style: normal;
   display: block;
   color: rgba(0, 0, 0, 0.5);
@@ -3968,7 +3968,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 
 .comment__meta .comment__reply a {
   font-size: 1.3rem;
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -4014,7 +4014,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   margin-top: 6rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * comments
  * ------------------------------------------------------------------- */
@@ -4124,7 +4124,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   margin-top: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## contact page
  * ------------------------------------------------------------------- */
 
