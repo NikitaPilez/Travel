@@ -11,7 +11,7 @@
                 <div class="d-flex justify-content-between">
                     <div class="d-flex">
                         <a href="{{asset('user/'.$comment->user->id)}}" class="font-weight-bold">{{$comment->user->name}}</a>
-                        <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($comment->created_at)->format('d F Y h:m')}}</h5>
+                        <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($comment->created_at)->format('d F Y')}}</h5>
                     </div>
                     <div>
                         <i class="cursor-pointer fa fa-reply text-black-50"></i>
@@ -23,9 +23,7 @@
                         <h6 class="d-inline-block">243</h6>
                         <i class="cursor-pointer fa fa-star-o"></i>
                     </div>
-
                 </div>
-
             </div>
         </div>
         @foreach($comment->childComments() as $childComments)
@@ -38,7 +36,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
                             <a href="{{asset('user/'.$childComments->user->id)}}" class="font-weight-bold">{{$childComments->user->name}}</a>
-                            <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($childComments->created_at)->format('d F Y h:m')}}</h5>
+                            <h5 class="ml-3 text-black-50">{{ \Carbon\Carbon::parse($childComments->created_at)->format('d F Y')}}</h5>
                         </div>
                         <div>
                             <i class="cursor-pointer fa fa-reply text-black-50"></i>
@@ -55,19 +53,26 @@
             </div>
         @endforeach
     @endforeach
-
-    <div class="m-5">
-        <h1 class="w-100 text-center mt-3">Post your comment</h1>
-        <div class="my-5">
-            <div class="d-flex">
-                <a href="#">
-                    <img class="comment-avatar animation-increase" href="#"
-                         src="https://picsum.photos/id/12/50/50" alt="">
-                </a>
-                <textarea class="form-control ml-3" rows="5" placeholder="Write some nice stuff or nothing..."></textarea>
-            </div>
-            <a class="my-4 btn-send-comment float-right text-white">Send comment</a>
+        @if (!Auth::guest())
+        <div class="m-5">
+            <h1 class="w-100 text-center mt-3">Post your comment</h1>
+            <form method="get" action="{{asset('sendComment/' . $post->id)}}">
+                {{ csrf_field() }}
+                <div class="my-5">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img class="comment-avatar animation-increase" href="#"
+                                 src="https://picsum.photos/id/12/50/50" alt="">
+                        </a>
+                        <textarea name="body" class="form-control ml-3" rows="5" placeholder="Write some nice stuff or nothing..."></textarea>
+                    </div>
+                    @if ($errors->has('body'))
+                        <h6 class="comment-danger">{{ $errors->first('body') }}</h6>
+                    @endif
+                    <button type="submit" class="my-4 btn-send-comment float-right text-white">Send comment</button>
+                </div>
+            </form>
         </div>
-    </div>
+        @endif
     </div>
 </div>

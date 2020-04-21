@@ -3,8 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Http\Requests\CommentRequest;
 use App\Post;
 use App\Tag;
+use App\Comment;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class BlogController extends Controller
 {
@@ -69,5 +75,27 @@ class BlogController extends Controller
             'tag' => $tag,
             'allPosts' => $allPosts,
         ]);
+    }
+
+    /**
+     * This method to add new comment.
+     * @param CommentRequest $request
+     * @param null $postId
+     * @return RedirectResponse
+     */
+    public function sendComment(CommentRequest $request, $postId = null)
+    {
+        if ($request->validated()) {
+            $comment = new Comment();
+            $comment->body = $name = $request->input('body');
+            $comment->post_id = $postId;
+            $comment->parent_id = 0;
+            $comment->status = 10;
+            $comment->user_id = Auth::user()->id;
+            $comment->created_at = time();
+            $comment->save();
+
+            return redirect()->back();
+        }
     }
 }

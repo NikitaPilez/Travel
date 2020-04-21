@@ -231,6 +231,12 @@
     border-bottom: 1px solid #CCCCCC;
 }
 
+.comment-danger {
+    color: red;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
 .pgn {
     margin: 3rem auto;
     text-align: center;
