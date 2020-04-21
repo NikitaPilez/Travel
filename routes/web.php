@@ -12,6 +12,8 @@ Route::get('/user/{userId}', 'UserController@indexAction');
 
 Route::post('post/put-star', 'AjaxController@putStar');
 
+Route::get('sendComment/{postId}', 'BlogController@sendComment');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
