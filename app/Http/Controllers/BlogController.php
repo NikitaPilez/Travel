@@ -95,7 +95,7 @@ class BlogController extends Controller
             $comment->created_at = time();
             $comment->save();
 
-            return redirect()->back();
+            return redirect()->back()->with('status', 'A comment sent successfully.');
         }
     }
 }

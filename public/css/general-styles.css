@@ -237,6 +237,12 @@
     margin-top: 10px;
 }
 
+.comment-success {
+    color: green;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
 .pgn {
     margin: 3rem auto;
     text-align: center;
