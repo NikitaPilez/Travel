@@ -53,7 +53,7 @@
             </div>
         @endforeach
     @endforeach
-        @if (!Auth::guest())
+        @if (Auth::check())
         <div class="m-5">
             <h1 class="w-100 text-center mt-3">Post your comment</h1>
             <form method="get" action="{{asset('sendComment/' . $post->id)}}">
