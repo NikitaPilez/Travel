@@ -68,6 +68,8 @@
                     </div>
                     @if ($errors->has('body'))
                         <h6 class="comment-danger">{{ $errors->first('body') }}</h6>
+                    @elseif (session('status'))
+                        <h6 class="comment-success">{{ session('status') }}</h6>
                     @endif
                     <button type="submit" class="my-4 btn-send-comment float-right text-white">Send comment</button>
                 </div>
