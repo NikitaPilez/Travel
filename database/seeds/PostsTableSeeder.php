@@ -15,11 +15,11 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             DB::table('posts')->insert([
-                'user_id' => rand(1, 50),
-                'category_id' => rand(1, 10),
-                'status' => rand(1, 10),
+                'user_id' => rand(1, 20),
+                'category_id' => rand(1, 5),
+                'status' => rand(1, 5),
                 'header' => $faker->sentence,
                 'body' => file_get_contents('https://loripsum.net/api/7/medium/decorated/link/ul/dl/ol/bq/headers/prude'),
                 'isPopular' => rand(0, 1),

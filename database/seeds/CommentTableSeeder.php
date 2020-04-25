@@ -15,10 +15,10 @@ class CommentTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             DB::table('comments')->insert([
-                'user_id' => rand(1, 50),
-                'post_id' => rand(1, 20),
+                'user_id' => rand(1, 20),
+                'post_id' => rand(1, 10),
                 'status' => rand(1, 10),
                 'parent_id' => 0,
                 'body' => $faker->sentence,
