@@ -2,7 +2,7 @@
 
 It's a simple blog with posts, category and tags. 
 
-#Set up project.
+# Set up project.
 
 - Clone this project.
 
@@ -26,6 +26,6 @@ It's a simple blog with posts, category and tags.
 
 - Run `npm run watch` and enjoy.
 
-##CodeSniffer
+## CodeSniffer
 
 Commands: "vendor/bin/phpcbf ./" - run code sniffer.
