@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TagsPostsTableSeeder::class);
         $this->call(CommentTableSeeder::class);
         $this->call(StarsPostsTableSeeder::class);
+        $this->call(HotelsTableSeeder::class);
+        $this->call(HotelsRoomsTableSeeder::class);
     }
 }
