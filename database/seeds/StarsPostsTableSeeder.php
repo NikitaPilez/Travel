@@ -15,10 +15,10 @@ class StarsPostsTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 200; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             DB::table('stars_posts')->insert([
-                'post_id' => rand(1, 20),
-                'user_id' => rand(1, 50),
+                'post_id' => rand(1, 10),
+                'user_id' => rand(1, 20),
                 'created_at' => rand(1546319103, 1568910506),
             ]);
         }

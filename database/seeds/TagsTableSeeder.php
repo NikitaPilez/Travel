@@ -16,10 +16,10 @@ class TagsTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 30; $i++) {
+        for ($i = 0; $i < 15; $i++) {
             DB::table('tags')->insert([
                 'name' => $faker->word,
-                'status' => rand(1, 10),
+                'status' => rand(1, 5),
                 'created_at' => rand(1546319103, 1568910506),
             ]);
         }
