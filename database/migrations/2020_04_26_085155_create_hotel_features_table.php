@@ -15,8 +15,8 @@ class CreateHotelFeaturesTable extends Migration
     public function up()
     {
         Schema::create('hotel_features', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('hotel_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('hotel_id')->unsigned();
             $table->foreign('hotel_id')->references('id')->on('hotels')->onDelete('cascade');
             $table->string('icon');
             $table->string('title');
