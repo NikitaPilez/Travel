@@ -28,11 +28,11 @@ class User extends \TCG\Voyager\Models\User
     ];
 
     /**
-     * This method return posts your object.
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * The attributes that should be cast to native types.
+     *
+     * @var array
      */
-    public function posts()
-    {
-        return $this->hasMany('App\Post');
-    }
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
 }
