@@ -19,6 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('login/{social}', 'Auth\LoginController@redirectToProvider')
+    ->where('social', 'google');
+
+Route::get('login/{social}/callback', 'Auth\LoginController@handleProviderCallback')
+    ->where('social', 'google');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
